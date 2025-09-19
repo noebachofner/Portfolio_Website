@@ -8,8 +8,8 @@
 }
 
 .logo img {
-    width: 64px;
-    height: 64px;
+    width: 70px;
+    height: 70px;
     display: block;
     border-radius: 50%;
     object-fit: cover;
@@ -26,8 +26,8 @@
     }
 
     .logo img {
-        width: 45px;
-        height: 45px;
+        width: 70px;
+        height: 70px;
     }
 }
 
@@ -38,7 +38,7 @@
     }
 
     .logo img {
-        width: 40px;
-        height: 40px;
+        width: 70px;
+        height: 70px;
     }
 }
