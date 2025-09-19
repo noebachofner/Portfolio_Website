@@ -1,0 +1,44 @@
+.section-split {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 2rem;
+}
+
+.image-container {
+    flex: 0 0 400px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 40px;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 40px;
+}
+
+.text-container {
+    flex: 1;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .section-split {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .image-container {
+        flex: 0 0 auto;
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .text-container {
+        text-align: center;
+    }
+}

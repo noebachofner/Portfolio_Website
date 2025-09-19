@@ -9,7 +9,7 @@ body {
     overflow-x: hidden;
 }
 
-/* Navigation */
+
 nav {
     position: fixed;
     top: 2rem;
@@ -25,7 +25,6 @@ nav {
     position: relative;
 }
 
-/* Verbindungslinie - Hintergrund */
 .nav-icons::before {
     content: '';
     position: absolute;
@@ -38,7 +37,6 @@ nav {
     z-index: -1;
 }
 
-/* Verbindungslinie - Fortschritt */
 .progress-line {
     position: absolute;
     top: 50%;
@@ -97,7 +95,6 @@ nav {
     fill: #8c1644;
 }
 
-/* Responsive Design */
 @media (max-width: 1200px) {
     .nav-icons {
         gap: 2.5rem;
@@ -166,7 +163,6 @@ nav {
     }
 }
 
-/* Sections */
 section {
     min-height: 100vh;
     display: flex;
