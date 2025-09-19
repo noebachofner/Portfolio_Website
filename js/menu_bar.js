@@ -12,7 +12,6 @@ navIcons.forEach(icon => {
 function updateNavigation() {
     const scrollTop = window.pageYOffset;
     const windowHeight = window.innerHeight;
-    const documentHeight = document.documentElement.scrollHeight;
 
     let currentSectionIndex = 0;
     let progressToNextSection = 0;
@@ -25,10 +24,10 @@ function updateNavigation() {
             const sectionTop = section.offsetTop;
             const sectionHeight = section.clientHeight;
 
-            if (scrollTop + windowHeight / 2 >= sectionTop) {
+            if (scrollTop >= sectionTop - windowHeight * 0.3) {
                 currentSectionIndex = index;
 
-                const scrollIntoSection = (scrollTop + windowHeight / 2) - sectionTop;
+                const scrollIntoSection = Math.max(0, scrollTop - sectionTop);
                 progressToNextSection = Math.min(scrollIntoSection / sectionHeight, 1);
             }
         });

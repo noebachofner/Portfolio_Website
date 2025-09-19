@@ -1,0 +1,46 @@
+/* Logo */
+.logo {
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+    z-index: 1000;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.logo img {
+    width: 64px;
+    height: 64px;
+    display: block;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive für Logo */
+@media (max-width: 768px) {
+    .logo {
+        top: 1.5rem;
+        left: 1.5rem;
+    }
+
+    .logo img {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        top: 1rem;
+        left: 1rem;
+    }
+
+    .logo img {
+        width: 40px;
+        height: 40px;
+    }
+}
