@@ -43,3 +43,23 @@
         height: 70px;
     }
 }
+
+.arrow-animated {
+    width: 40px;
+    height: 40px;
+    fill: #8c1644;
+    animation: bounce 2s infinite;
+    cursor: pointer;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
